@@ -1,8 +1,17 @@
-const App = React.createElement(
-  "h1",
-  { style: { color: "red" } },
-  "Hello World"
-);
+import { bigwatch } from "./OnceMore";
+import { smallwatch } from "./another";
+
+const App = () => {
+  {
+    return React.createElement(
+      "h1",
+      { style: { color: "red" } },
+      "Hello World",
+      smallwatch(),
+      bigwatch()
+    );
+  }
+};
 
 // const HelloWorld = () => {
 //   return <h1> thsi is sisisi</h1>;
@@ -18,4 +27,4 @@ const App = React.createElement(
 // };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(App);
+root.render(React.createElement(App));
