@@ -1,5 +1,5 @@
 import React from "react";
 
-export const smallwatch = () => {
+export const Smallwatch = () => {
   return React.createElement("p", {}, "h");
 };
